@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+ }
+ body{
+     background-size: cover;
+            background-repeat: repeat;
+            margin: 0;
+            height: 10px;
+            background-image: url(whatspingo.jpeg);
+ }
+ .head_for_every_page{
+   border: 0px solid;
+   border-radius: 10px;
+ background-image: linear-gradient(to left, brown,yellow,orange,green,grey);
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 0px;
+ }
+ 
+ .web_logo{
+    width: 120px;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 70%;
+ }
+ .slider-nav {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+ }
+ 
+ .slider-nav-item {
+    font-size: 30px;
+    margin: 20px;
+ }
+ 
+ 
+ a{
+    text-decoration:none;
+ }
+ .id {
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+     
+     padding: 10px;
+     list-style: none;           
+ }
+ body {
+             font-family: Arial, sans-serif;
+         }
+         .navbar {
+             display: flex;
+             align-items: center;
+             justify-content: flex-start;
+             padding: 10px;
+             background-color: white;
+             border: 4px solid,grey;
+             border-radius: 10px;
+             background: linear-gradient(to left,red,blue,orange);
+         }
+         .navbar-item {
+             margin: 0 15px;
+             position: relative;
+             cursor: pointer;
+             color: black;
+             text-transform: uppercase;
+             font-weight: bold;
+             border: 5px solid rgb(9, 9, 9);
+             border-radius: 15px;
+             background: linear-gradient(to right, aqua,black,brown,red,blue,pink);
+         }
+         .navbar-item:hover {
+             color: rgb(32, 2, 23);
+             
+         }
+         .dropdown {
+             display: none;
+             position: absolute;
+             top: 100%;
+             left: 0;
+           background: linear-gradient(to bottom,yellow,black,aqua,grey,black,red,black);
+             border: 5px solid rgb(8, 6, 6);
+             z-index: 1;
+             border-radius: 10px;
+         }
+         .navbar-item:hover .dropdown {
+             display: block;
+         }
+         .dropdown a {
+             display: block;
+             padding: 8px 12px;
+             color: black;
+             text-decoration: none;
+         }
+         .dropdown a:hover {
+             background-color: #f0f0f0;
+         }
+         .search-icon {
+             margin-left: auto;
+             font-size: 18px;
+             cursor: pointer;
+         }
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            color: #333;
+        
+        }
+
+        header p {
+            font-size: 1rem;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        .suit-collection {
+            margin-top: 30px;
+        }
+
+        .suit-collection h2 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .suit-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .suit-item {
+            width: 200px;
+            text-align: center;
+        }
+
+        .suit-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            border: 5px solid rgba(8, 233, 75, 0.573);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .suit-item img:hover {
+            transform: scale(1.05); /* Slightly enlarges the image */
+            box-shadow: 0 0 15px rgba(183, 159, 18, 0.8); /* Adds a glowing shadow */
+        }
+
+        .suit-item p {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #333;
+        }
+        header h1,h2, header p, .suit-collection h2, .suit-item p {
+            text-align: center;
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            color: transparent;
+            background-clip: text;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); /* Adds a subtle shadow for better readability */
+        }
+        
+        .saree-item p {
+            color: #f09115ba; /* Use white for the descriptions */
+        }
+        .saree-collection {
+            margin-top: 30px;
+        }
+
+        .saree-collection h2 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .saree-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .saree-item {
+            width: 200px;
+            text-align: center;
+        }
+
+        .saree-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            border: 5px solid rgba(8, 233, 75, 0.573);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .saree-item img:hover {
+            transform: scale(1.05); /* Slightly enlarges the image */
+            box-shadow: 0 0 15px rgba(183, 159, 18, 0.8); /* Adds a glowing shadow */
+        }
+
+        .saree-item p {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #333;
+        }
+        .poshak-items p {
+            color: #f09115ba; /* Use white for the descriptions */
+        }
+        .poshak-collection {
+            margin-top: 30px;
+        }
+
+        .poshak-collection h2 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .poshak-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .poshak-items {
+            width: 200px;
+            text-align: center;
+        }
+
+        .poshak-items img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            border: 5px solid rgba(8, 233, 75, 0.573);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .poshak-items img:hover {
+            transform: scale(1.05); /* Slightly enlarges the image */
+            box-shadow: 0 0 15px rgba(183, 159, 18, 0.8); /* Adds a glowing shadow */
+        }
+
+        .poshak-items p {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #333;
+        }
+        

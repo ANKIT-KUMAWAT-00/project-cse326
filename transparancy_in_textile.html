@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparency in Textile Supply Chains</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Body Styling */
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        /* Header */
+        .header {
+            background-color: #3e8e41;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .header h1:hover {
+            transform: scale(1.05);
+            color: #f1f1f1;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #6c9e78;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #2e7d32;
+            border-radius: 4px;
+            color: #f9f9f9;
+        }
+
+        /* Section Styles */
+        .section {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .section:hover {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .section h2 {
+            color: #3e8e41;
+            margin-bottom: 10px;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #6c9e78;
+            padding-bottom: 5px;
+        }
+
+        /* Supply Chain Stages Cards */
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .card {
+            flex: 1 1 calc(30% - 20px);
+            background-color: #e8f5e9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h3 {
+            color: #2e7d32;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .card:hover h3 {
+            color: #1b5e20;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: #333;
+        }
+
+        /* Hover Effect - More Info Button */
+        .more-info {
+            display: none;
+            background-color: rgba(76, 175, 80, 0.9);
+            color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .card:hover .more-info {
+            display: block;
+            opacity: 1;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            color: #fff;
+            background-color: #333;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1>Transparency in Textile Supply Chains</h1>
+        <p>Understanding Each Step of Production for a Better Future</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="#raw-materials">Raw Materials</a>
+        <a href="#manufacturing">Manufacturing</a>
+        <a href="#distribution">Distribution</a>
+    </nav>
+
+    <!-- Raw Materials Section -->
+    <div class="container">
+        <section id="raw-materials" class="section">
+            <h2>Raw Materials</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Organic Cotton</h3>
+                    <p>Sustainably grown cotton, free from harmful chemicals.</p>
+                    <div class="more-info">Organic cotton helps reduce water usage and supports healthier ecosystems.</div>
+                </div>
+                <div class="card">
+                    <h3>Recycled Fibers</h3>
+                    <p>Fibers made from recycled materials reduce landfill waste.</p>
+                    <div class="more-info">These fibers are eco-friendly and minimize resource consumption.</div>
+                </div>
+                <div class="card">
+                    <h3>Bamboo Fabric</h3>
+                    <p>Bamboo is fast-growing, requiring minimal resources to cultivate.</p>
+                    <div class="more-info">Its cultivation process has a lower environmental impact.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Manufacturing Section -->
+        <section id="manufacturing" class="section">
+            <h2>Manufacturing</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Ethical Labor</h3>
+                    <p>Ensuring fair wages and safe conditions for workers.</p>
+                    <div class="more-info">Supports social equity and reduces exploitation.</div>
+                </div>
+                <div class="card">
+                    <h3>Eco-Friendly Dyes</h3>
+                    <p>Using dyes that minimize harmful chemicals and waste.</p>
+                    <div class="more-info">Reduces water pollution and is safer for both workers and the environment.</div>
+                </div>
+                <div class="card">
+                    <h3>Low-Impact Processing</h3>
+                    <p>Adopting practices that reduce carbon footprint and energy use.</p>
+                    <div class="more-info">Helps lessen environmental impact during production.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Distribution Section -->
+        <section id="distribution" class="section">
+            <h2>Distribution</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Carbon-Neutral Shipping</h3>
+                    <p>Using transport methods with minimal carbon emissions.</p>
+                    <div class="more-info">Reduces the environmental impact of product delivery.</div>
+                </div>
+                <div class="card">
+                    <h3>Transparent Packaging</h3>
+                    <p>Packaging that shows clear sourcing and material information.</p>
+                    <div class="more-info">Allows consumers to make informed decisions on sustainability.</div>
+                </div>
+                <div class="card">
+                    <h3>Local Distribution Networks</h3>
+                    <p>Prioritizing local suppliers to reduce shipping distances.</p>
+                    <div class="more-info">Cuts down on emissions and supports local economies.</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Transparency in Textile Supply Chains</p>
+    </footer>
+
+</body>
+</html>

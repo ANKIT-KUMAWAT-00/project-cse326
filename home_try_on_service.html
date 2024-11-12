@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Try-On Service for Textiles</title>
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      background-color: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .header {
+      text-align: center;
+      padding: 2rem;
+      background-color: #f7d5a0;
+      width: 100%;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      color: #7c4b1d;
+    }
+
+    .header p {
+      font-size: 1.2rem;
+    }
+
+    .swatches {
+      display: flex;
+      gap: 2rem;
+      margin: 2rem 0;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .swatch-item {
+      width: 200px;
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .swatch-item img {
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .swatch-item p {
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+
+    .cta {
+      text-align: center;
+      padding: 2rem;
+      background-color: #fff;
+      border-top: 2px solid #7c4b1d;
+      width: 100%;
+      max-width: 600px;
+    }
+
+    .cta h2 {
+      color: #7c4b1d;
+    }
+
+    .cta p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .cta-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .cta-form label {
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .cta-form input, .cta-form select {
+      padding: 0.8rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .cta-form button {
+      padding: 0.8rem;
+      font-size: 1.1rem;
+      background-color: #7c4b1d;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .cta-form button:hover {
+      background-color: #5a2f15;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <h1>Home Try-On Service for Textiles</h1>
+    <p>Order fabric swatches and try them on at home before making a decision.</p>
+  </header>
+
+  <!-- Swatches Section -->
+  <section class="swatches">
+    <div class="swatch-item">
+      <img src="https://imgs.search.brave.com/6eFWlXrXFhI3ij8hfDevwa36ODTne7vlr8oQ37YBdXs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9sb29t/YW5kc3RhcnMuY29t/L2Nkbi9zaG9wL2Zp/bGVzL2JsdWUtYW5k/LXdoaXRlLWJsb2Nr/LXByaW50LXZvaWxl/LWZhYnJpY19mYjRl/YTEzOC1hYjlkLTRl/NGMtYjMwMS03Mzg0/NDY4OGMzODEuanBn/P3Y9MTcxMTMxNDIx/MyZ3aWR0aD01MzM" alt="Fabric Swatch 1">
+      <p>Luxurious Velvet</p>
+    </div>
+    <div class="swatch-item">
+      <img src="https://imgs.search.brave.com/W1hKKKC34dTzj7zWt0btzs7Y_7J7KGRgmlvQsvfuj2w/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc3F1YXJlc3Bh/Y2UtY2RuLmNvbS9j/b250ZW50L3YxLzU5/MTJiN2JhMzdjNTgx/YWM3ZmI1MTU0OC8x/NzEzOTM1NzI4MTky/LVRIOVFFVUpJM01L/Nk40ODFIV0lDL0lu/ZGlnbytDaGVjaytI/YW5kK1Rvd2VsKy0r/Zm9sZGVkLmpwZw" alt="Fabric Swatch 2">
+      <p>Soft Linen</p>
+    </div>
+    <div class="swatch-item">
+      <img src="https://imgs.search.brave.com/XSnqRjjMH9UG1Z3Z_rqOfKuwUz26_mbfyR8nFOnbLbQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc3F1YXJlc3Bh/Y2UtY2RuLmNvbS9j/b250ZW50L3YxLzU1/OTllMzc3ZTRiMDg5/MmVkYzAxOWJlYi8x/Njk1Nzg1NTMyOTc4/LTY2SjkwWlpHQVFW/SzQwOEZBSkdLL2Ft/YmIta25pdC5qcGc" alt="Fabric Swatch 3">
+      <p>Warm Wool</p>
+    </div>
+
+  </section>
+
+
+  <section class="cta">
+    <h2>How it Works</h2>
+    <p>Get free samples sent to your home! Choose up to three fabric swatches to try before you buy. Feel the textures, check the colors in your space, and make an informed decision.</p>
+    
+    <form class="cta-form">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="swatches">Choose Your Swatches (up to 3):</label>
+      <select id="swatches" name="swatches" multiple required>
+        <option value="velvet">Luxurious Velvet</option>
+        <option value="linen">Soft Linen</option>
+        <option value="wool">Warm Wool</option>
+
+      </select>
+      
+      <button type="submit">Request Samples</button>
+    </form>
+  </section>
+</body>
+</html>

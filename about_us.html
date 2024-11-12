@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Body Styling */
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            padding: 40px;
+            background-color: #4caf50;
+            color: #fff;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 10px auto;
+        }
+
+        /* Mission Section */
+        .mission-section {
+            background-color: #e8f5e9;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .mission-section h2 {
+            color: #388e3c;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .mission-section p {
+            font-size: 1rem;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Team Section */
+        .team-section {
+            padding: 30px;
+        }
+
+        .team-section h2 {
+            text-align: center;
+            color: #388e3c;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .team-members {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .member-card {
+            flex: 1 1 calc(33.333% - 20px);
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .member-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .member-card img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .member-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .member-card h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .member-card p {
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            color: #fff;
+            background-color: #333;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1>About Us</h1>
+        <p>We are dedicated to creating sustainable and innovative solutions that drive positive impact on the environment and society.</p>
+    </header>
+
+    <!-- Mission Section -->
+    <div class="container">
+        <section class="mission-section">
+            <h2>Our Mission</h2>
+            <p>To inspire sustainable growth through eco-friendly practices, transparent business processes, and high-quality products. We believe in making a difference by reducing our environmental footprint and fostering positive change in communities.</p>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team-section">
+            <h2>Meet the Team</h2>
+            <div class="team-members">
+                <div class="member-card">
+                    <img src="https://via.placeholder.com/120" alt="Member Photo">
+                    <h3>Prahlad Kumawat</h3>
+                    <p>OWNER</p>
+                </div>
+                <div class="member-card">
+                    <img src="https://via.placeholder.com/120" alt="Member Photo">
+                    <h3>Sumitra</h3>
+                    <p>OWNER</p>
+                </div>
+                <div class="member-card">
+                    <img src="https://via.placeholder.com/120" alt="Member Photo">
+                    <h3>Ajay and Vijay txt.</h3>
+                    <p>Lead Designer</p>
+                </div>
+                <div class="member-card">
+                    <img src="https://via.placeholder.com/120" alt="Member Photo">
+                    <h3>Jai Rathore</h3>
+                    <p>Product Manager</p>
+                </div>
+                <div class="member-card">
+                    <img src="https://via.placeholder.com/120" alt="Member Photo">
+                    <h3>Ankit</h3>
+                    <p>Chief Technology Officer</p>
+                </div>
+                <div class="member-card">
+                    <img src="https://via.placeholder.com/120" alt="Member Photo">
+                    <h3>Nikita</h3>
+                    <p>Head of Sustainability</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Our Company. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

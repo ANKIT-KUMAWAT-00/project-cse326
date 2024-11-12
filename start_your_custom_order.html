@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request Custom Order</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f7f7f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* Form Container */
+    .custom-order-form {
+      background: linear-gradient(135deg, #ff7e5f, #feb47b);
+      width: 100%;
+      max-width: 700px;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
+      color: #333;
+      text-align: center;
+    }
+
+    .custom-order-form h2 {
+      font-size: 2.5em;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .custom-order-form p {
+      color: #fff;
+      margin-bottom: 30px;
+      font-size: 1.1em;
+      line-height: 1.5;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    .form-group select,
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px;
+      font-size: 1em;
+      border-radius: 10px;
+      border: 2px solid #ddd;
+      background-color: #fff;
+      transition: border 0.3s ease, transform 0.3s ease;
+    }
+
+    .form-group select:focus,
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: #ff7e5f;
+      transform: scale(1.05);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      height: 150px;
+    }
+
+    .submit-btn {
+      background-color: #ff7e5f;
+      color: white;
+      font-size: 1.2em;
+      font-weight: bold;
+      padding: 12px 40px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      background-color: #feb47b;
+      transform: translateY(-5px);
+    }
+
+    .submit-btn:active {
+      transform: translateY(2px);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .custom-order-form {
+        width: 90%;
+        padding: 30px;
+      }
+
+      .custom-order-form h2 {
+        font-size: 2em;
+      }
+
+      .form-group label {
+        font-size: 1em;
+      }
+
+      .form-group select,
+      .form-group input,
+      .form-group textarea {
+        font-size: 0.9em;
+      }
+
+      .submit-btn {
+        font-size: 1em;
+        padding: 10px 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="custom-order-form">
+    <h2>Request Customr Order</h2>
+    <p>We will tailor your product to your exact preferences. Please fill out the details below:</p>
+
+    <form>
+      <!-- Design Selection -->
+      <div class="form-group">
+        <label for="design">Choose Your Design</label>
+        <select id="design" name="design" required>
+          <option value="modern">Modern</option>
+          <option value="classic">Classic</option>
+          <option value="vintage">Vintage</option>
+          <option value="minimalist">Minimalist</option>
+        </select>
+      </div>
+
+      <!-- Color Selection -->
+      <div class="form-group">
+        <label for="color">Choose Your Color</label>
+        <select id="color" name="color" required>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+          <option value="black">Black</option>
+          <option value="white">White</option>
+        </select>
+      </div>
+
+      <!-- Features Textarea -->
+      <div class="form-group">
+        <label for="features">Additional Features</label>
+        <textarea id="features" name="features" placeholder="Describe any additional features you want..." required></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="submit-btn">Submit Order</button>
+    </form>
+  </div>
+
+</body>
+</html>

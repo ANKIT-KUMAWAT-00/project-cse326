@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Textile Loyalty & Referral Program</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      background-color: #f8f8f8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .header {
+      text-align: center;
+      padding: 3rem;
+      background-color: #f2e1c1;
+      width: 100%;
+    }
+
+    .header h1 {
+      font-size: 3rem;
+      color: #5d4037;
+    }
+
+    .header p {
+      font-size: 1.5rem;
+      color: #6d4c41;
+    }
+
+    .program-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+      background-color: #fff;
+      width: 100%;
+      max-width: 800px;
+      margin-top: 2rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    .program-section h2 {
+      font-size: 2.5rem;
+      color: #5d4037;
+      margin-bottom: 1rem;
+    }
+
+    .program-section p {
+      font-size: 1.2rem;
+      color: #6d4c41;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .loyalty-info, .referral-info {
+      display: flex;
+      gap: 3rem;
+      justify-content: center;
+      margin-bottom: 3rem;
+    }
+
+    .loyalty-info div, .referral-info div {
+      background-color: #fff;
+      padding: 1.5rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .loyalty-info h3, .referral-info h3 {
+      font-size: 1.8rem;
+      color: #5d4037;
+      margin-bottom: 1rem;
+    }
+
+    .loyalty-info p, .referral-info p {
+      font-size: 1rem;
+      color: #6d4c41;
+    }
+
+    .program-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 400px;
+      margin: 2rem 0;
+      text-align: center;
+    }
+
+    .program-form input,
+    .program-form button {
+      padding: 1rem;
+      font-size: 1rem;
+      border-radius: 4px;
+    }
+
+    .program-form input {
+      width: 100%;
+      border: 1px solid #ccc;
+    }
+
+    .program-form button {
+      background-color: #5d4037;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .program-form button:hover {
+      background-color: #3e2723;
+    }
+
+    .program-form p {
+      font-size: 1.2rem;
+      color: #6d4c41;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="header">
+    <h1>Textile Loyalty & Referral Program</h1>
+    <p>Earn rewards and discounts on your favorite textiles by referring friends or making purchases!</p>
+  </header>
+
+  <!-- Program Details Section -->
+  <section class="program-section">
+    <h2>Join Our Textile Loyalty & Referral Program</h2>
+    <p>Earn points for every purchase made from our cotton, linen, or wool collections and refer friends to receive extra discounts and rewards!</p>
+
+    <!-- Loyalty Info -->
+    <div class="loyalty-info">
+      <div>
+        <h3>Loyalty Points</h3>
+        <p>Earn 1 point for every $10 spent on cotton, linen, or wool textiles.</p>
+        <p>Redeem points for exclusive discounts on future purchases!</p>
+      </div>
+      <div>
+        <h3>Rewards</h3>
+        <p>Accumulate 50 points and get a 10% discount on your next order!</p>
+        <p>Reach 100 points for a 20% discount!</p>
+      </div>
+    </div>
+
+    <!-- Referral Info -->
+    <div class="referral-info">
+      <div>
+        <h3>Referral Program</h3>
+        <p>Refer a friend and earn 20 loyalty points when they make their first purchase!</p>
+        <p>Your friend will also get a 10% discount on their first order.</p>
+      </div>
+      <div>
+        <h3>Referral Rewards</h3>
+        <p>For every 3 successful referrals, earn a $30 gift card to use on your next purchase.</p>
+        <p>Plus, unlimited discounts for you and your friends!</p>
+      </div>
+    </div>
+
+    <!-- Loyalty and Referral Form -->
+    <div class="program-form">
+      <h3>Sign Up Now!</h3>
+      <p>Enter your details to join the loyalty and referral program and start earning rewards today!</p>
+      
+      <form>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="referral-code">Referral Code (if any):</label>
+        <input type="text" id="referral-code" name="referral-code" placeholder="Enter referral code" optional>
+
+        <button type="submit">Join the Program</button>
+      </form>
+      
+      <p>Get started and earn rewards on cotton, linen, and wool textiles today!</p>
+    </div>
+  </section>
+ 
+  
+</body>
+</html>

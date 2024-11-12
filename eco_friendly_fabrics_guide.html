@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Friendly Fabric Guide</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Body Styling */
+        body {
+            background-color: #f9f7f3;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        /* Header */
+        .header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .header h1:hover {
+            transform: scale(1.05);
+            color: #f5f5f5;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #81c784;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #388e3c;
+            border-radius: 4px;
+            color: #f0f7f9;
+        }
+
+        /* Section Styles */
+        .section {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 1s ease;
+        }
+
+        .section:hover {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .section h2 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #81c784;
+            padding-bottom: 5px;
+        }
+
+        /* Fabric Cards */
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .card {
+            flex: 1 1 calc(30% - 20px);
+            background-color: #e0f2f1;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h3 {
+            color: #00796b;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .card:hover h3 {
+            color: #004d40;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: #333;
+        }
+
+        /* Hover Effect - More Info Button */
+        .more-info {
+            display: none;
+            background-color: rgba(76, 175, 80, 0.9);
+            color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .card:hover .more-info {
+            display: block;
+            opacity: 1;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            color: #fff;
+            background-color: #333;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1>Eco-Friendly Fabric Guide</h1>
+        <p>Explore Sustainable Fabrics: From Organic Cotton to Tencel</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="#organic-cotton">Organic Cotton</a>
+        <a href="#bamboo">Bamboo Fabric</a>
+        <a href="#tencel">Tencel</a>
+    </nav>
+
+    <!-- Organic Cotton Section -->
+    <div class="container">
+        <section id="organic-cotton" class="section">
+            <h2>Organic Cotton</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Eco-Friendly Growth</h3>
+                    <p>Organic cotton is grown without synthetic pesticides, making it safer for the environment.</p>
+                    <div class="more-info">Organic cotton farming reduces water usage and supports healthier ecosystems.</div>
+                </div>
+                <div class="card">
+                    <h3>Soft and Durable</h3>
+                    <p>Known for its softness, organic cotton is also strong and lasts longer.</p>
+                    <div class="more-info">Ideal for clothing and bedding, providing both comfort and durability.</div>
+                </div>
+                <div class="card">
+                    <h3>Allergy-Friendly</h3>
+                    <p>Organic cotton is hypoallergenic, making it ideal for sensitive skin.</p>
+                    <div class="more-info">Free from harsh chemicals, it reduces the risk of skin irritation.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bamboo Fabric Section -->
+        <section id="bamboo" class="section">
+            <h2>Bamboo Fabric</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Sustainable Source</h3>
+                    <p>Bamboo grows quickly and requires minimal water, making it an eco-friendly choice.</p>
+                    <div class="more-info">Bamboo plants regenerate without replanting, reducing soil erosion.</div>
+                </div>
+                <div class="card">
+                    <h3>Breathable and Cool</h3>
+                    <p>Bamboo fabric is lightweight and breathable, keeping you cool in warm weather.</p>
+                    <div class="more-info">Its natural properties make it moisture-wicking and odor-resistant.</div>
+                </div>
+                <div class="card">
+                    <h3>Antibacterial Properties</h3>
+                    <p>Bamboo fabric has natural antibacterial qualities, making it a healthy fabric choice.</p>
+                    <div class="more-info">These properties help it stay fresher for longer, even with regular use.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tencel Section -->
+        <section id="tencel" class="section">
+            <h2>Tencel</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Eco-Conscious Manufacturing</h3>
+                    <p>Made from sustainably sourced wood pulp, Tencel is environmentally friendly.</p>
+                    <div class="more-info">Its production uses a closed-loop system, recycling water and solvents.</div>
+                </div>
+                <div class="card">
+                    <h3>Soft and Silky</h3>
+                    <p>Tencel has a smooth, silky feel, making it ideal for luxurious clothing and bedding.</p>
+                    <div class="more-info">The fabric’s smooth surface is gentle on sensitive skin.</div>
+                </div>
+                <div class="card">
+                    <h3>Moisture Control</h3>
+                    <p>Tencel efficiently absorbs moisture, keeping the fabric cool and comfortable.</p>
+                    <div class="more-info">This makes it a great choice for activewear and summer clothing.</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Eco-Friendly Fabric Guide</p>
+    </footer>
+
+</body>
+</html>

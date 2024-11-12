@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rise of Biodegradable Textiles</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Verdana', sans-serif;
+        }
+
+        /* Body Styling */
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        /* Header Styling */
+        .header {
+            background: linear-gradient(to right, #64b5f6, #4db6ac);
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .header h1:hover {
+            color: #dbe9f1;
+            transform: scale(1.05);
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background: linear-gradient(to right, #4db6ac, #64b5f6);
+            padding: 10px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #0288d1;
+            color: #e0f7fa;
+            border-radius: 4px;
+        }
+
+        /* Section Styling */
+        .section {
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+        .section:hover {
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            transform: scale(1.02);
+        }
+
+        .section h2 {
+            margin-bottom: 10px;
+            font-size: 1.8rem;
+            padding-bottom: 5px;
+        }
+
+        /* Unique Section Colors */
+        .raw-materials { background-color: #ffecb3; }
+        .manufacturing { background-color: #ffe0b2; }
+        .end-of-life { background-color: #dcedc8; }
+
+        /* Card Styles */
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .card {
+            flex: 1 1 calc(30% - 20px);
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h3 {
+            color: #0277bd;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .card:hover h3 {
+            color: #01579b;
+        }
+
+        /* Hover Overlay Effect */
+        .more-info {
+            display: none;
+            background-color: rgba(38, 166, 154, 0.9);
+            color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .card:hover .more-info {
+            display: block;
+            opacity: 1;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            color: #fff;
+            background-color: #333;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1>The Rise of Biodegradable Textiles</h1>
+        <p>Reducing Textile Waste for a More Sustainable Future</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="#raw-materials">Raw Materials</a>
+        <a href="#manufacturing">Manufacturing Process</a>
+        <a href="#end-of-life">End of Life</a>
+    </nav>
+
+    <!-- Raw Materials Section -->
+    <div class="container">
+        <section id="raw-materials" class="section raw-materials">
+            <h2>Raw Materials</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Organic Hemp</h3>
+                    <p>Biodegradable and sustainable, hemp requires minimal resources.</p>
+                    <div class="more-info">Hemp degrades naturally and replenishes soil nutrients.</div>
+                </div>
+                <div class="card">
+                    <h3>Bamboo Fiber</h3>
+                    <p>Bamboo is fast-growing, requires minimal water, and breaks down easily.</p>
+                    <div class="more-info">Its natural biodegradability supports eco-friendly waste management.</div>
+                </div>
+                <div class="card">
+                    <h3>Lyocell</h3>
+                    <p>Derived from wood pulp, Lyocell is fully compostable and biodegradable.</p>
+                    <div class="more-info">Its production involves a closed-loop process, recycling solvents.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Manufacturing Process Section -->
+        <section id="manufacturing" class="section manufacturing">
+            <h2>Manufacturing Process</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Eco-Friendly Dyes</h3>
+                    <p>Dyes that minimize pollutants and decompose without harming the environment.</p>
+                    <div class="more-info">Reduces chemical runoff, supporting clean water sources.</div>
+                </div>
+                <div class="card">
+                    <h3>Low Energy Use</h3>
+                    <p>Processes that lower energy consumption reduce carbon footprint.</p>
+                    <div class="more-info">Lower emissions and sustainable practices in textile production.</div>
+                </div>
+                <div class="card">
+                    <h3>Closed-Loop Systems</h3>
+                    <p>Systems that recycle water and solvents, minimizing waste and emissions.</p>
+                    <div class="more-info">Promotes efficiency while reducing environmental impact.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- End of Life Section -->
+        <section id="end-of-life" class="section end-of-life">
+            <h2>End of Life</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Composting Programs</h3>
+                    <p>Textiles that biodegrade into soil, reducing landfill waste.</p>
+                    <div class="more-info">Converts waste into beneficial compost, supporting agriculture.</div>
+                </div>
+                <div class="card">
+                    <h3>Take-Back Programs</h3>
+                    <p>Brands encouraging textile recycling to manage waste sustainably.</p>
+                    <div class="more-info">Incentivizes consumers to return used items for recycling.</div>
+                </div>
+                <div class="card">
+                    <h3>Zero-Waste Disposal</h3>
+                    <p>Practices ensuring textiles leave minimal residue or harm.</p>
+                    <div class="more-info">Supports a circular economy, reducing environmental harm.</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 The Rise of Biodegradable Textiles</p>
+    </footer>
+
+</body>
+</html>

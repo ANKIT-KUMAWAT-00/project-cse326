@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Textile Subscription Box Service</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      background-color: #f8f8f8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .header {
+      text-align: center;
+      padding: 3rem;
+      background-color: #f1d6a3;
+      width: 100%;
+    }
+
+    .header h1 {
+      font-size: 3rem;
+      color: #6d4c41;
+    }
+
+    .header p {
+      font-size: 1.5rem;
+      color: #4e342e;
+    }
+
+    .subscription-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+      background-color: #fff;
+      width: 100%;
+      max-width: 700px;
+      margin-top: 2rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    .subscription-box h2 {
+      font-size: 2rem;
+      color: #6d4c41;
+      margin-bottom: 1rem;
+    }
+
+    .subscription-box p {
+      font-size: 1.2rem;
+      color: #4e342e;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .subscription-options {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .option-card {
+      background-color: #fff;
+      padding: 1.5rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: 200px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .option-card h3 {
+      font-size: 1.5rem;
+      color: #6d4c41;
+      margin-bottom: 1rem;
+    }
+
+    .option-card p {
+      font-size: 1rem;
+      color: #4e342e;
+      margin-bottom: 1.5rem;
+    }
+
+    .option-card button {
+      background-color: #6d4c41;
+      color: #fff;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .option-card button:hover {
+      background-color: #5b4032;
+    }
+
+    .cta-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+      max-width: 500px;
+    }
+
+    .cta-form label {
+      font-size: 1rem;
+      color: #4e342e;
+    }
+
+    .cta-form input {
+      padding: 1rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .cta-form button {
+      padding: 1rem;
+      font-size: 1.1rem;
+      background-color: #6d4c41;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-form button:hover {
+      background-color: #5b4032;
+    }
+  </style>
+</head>
+<body>
+ 
+  <header class="header">
+    <h1>Textile Subscription Box</h1>
+    <p>Subscribe to receive curated textile products, from fabric swatches to seasonal collections!</p>
+  </header>
+
+  
+  <section class="subscription-box">
+    <h2>Choose Your Subscription</h2>
+    <p>Get exclusive textile products delivered to your door monthly. Select from our tailored options:</p>
+
+    <div class="subscription-options">
+      <div class="option-card">
+        <h3>Fabric Swatches</h3>
+        <p>Receive curated fabric swatches each month to explore new textures and patterns.</p>
+        <button>Subscribe Now</button>
+      </div>
+      <div class="option-card">
+        <h3>Seasonal Collections</h3>
+        <p>Get exclusive seasonal textile collections, including premium fabrics for fashion and home.</p>
+        <button>Subscribe Now</button>
+      </div>
+      <div class="option-card">
+        <h3>Textile Care Kit</h3>
+        <p>Monthly care kits with textile maintenance  essentials  to keep your fabrics in top condition.</p>
+        <button>Subscribe Now</button>
+      </div>
+    </div>
+
+
+    <p>Ready to receive your first box?</p>
+    <form class="cta-form">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="subscription">Choose Your Subscription Plan:</label>
+      <select id="subscription" name="subscription" required>
+        <option value="swatches">Fabric Swatches</option>
+        <option value="seasonal">Seasonal Collections</option>
+        <option value="care-kit">Textile Care Kit</option>
+      </select>
+
+      <button type="submit">Subscribe Now</button>
+    </form>
+  </section>
+</body>
+</html>
