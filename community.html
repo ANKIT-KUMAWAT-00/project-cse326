@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textile Community</title>
+    <style>
+   
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+      
+        body {
+            background: linear-gradient(to bottom, #f5f5dc, #fffacd);
+            color: #333;
+            line-height: 1.6;
+            padding: 0 15px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 30px 0;
+            background: rgba(255, 255, 255, 0.8);
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .header h1 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+
+        .about {
+            text-align: center;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .about h2 {
+            font-size: 1.8em;
+            color: #444;
+        }
+
+        .about p {
+            font-size: 1em;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+    
+        .gallery {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .gallery h2 {
+            font-size: 1.8em;
+            color: #444;
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px 0;
+        }
+
+        .gallery-item {
+            position: relative;
+            background: #f0f0f0;
+            color: #333;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 150px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1);
+           
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item h3 {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: white;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 5px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover h3 {
+            opacity: 1;
+        }
+
+      
+        .forum {
+            text-align: center;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .forum h2 {
+            font-size: 1.8em;
+            color: #444;
+        }
+
+        .forum p {
+            font-size: 1em;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto 20px;
+        }
+
+        .forum button {
+            padding: 10px 20px;
+            background-color: #444;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .forum button:hover {
+            background-color: #333;
+        }
+        .forum a{
+            text-decoration: none;
+            color: white;
+        }
+
+
+     
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>Welcome to the Textile Community</h1>
+        <p>A place to share, learn, and grow in the world of textiles!</p>
+    </header>
+
+
+    <section class="about">
+        <h2>About Us</h2>
+        <p>This community is dedicated to textile enthusiasts, artists, and designers. Explore traditional and modern textiles, share knowledge, and get inspired!</p>
+    </section>
+
+
+    <section class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+               <a href="https://www.rangwalarajwadi.com/product/purple-color-tissue-rajputi-pure-poshak-3011/"><img src="https://www.rangwalarajwadi.com/wp-content/uploads/2024/10/Rangwala-16_11zon_11zon-600x900.webp" alt=""></a>
+                <h3>Tissue Rajputi</h3>
+            </div>
+            <div class="gallery-item">
+                <a href="https://www.rangwalarajwadi.com/product-category/poshak/"><img src="https://www.rangwalarajwadi.com/wp-content/uploads/2020/10/Poshak-3-17-300x420.jpg" alt=""></a>
+                <h3>Cotton Rajvadi poshak</h3>
+            </div>
+            <div class="gallery-item">
+               <a href="https://www.rangwalarajwadi.com/product/poshak-03-a/"> <img src="https://www.rangwalarajwadi.com/wp-content/uploads/2024/10/Rangwala-21_11zon_11zon-600x900.webp" alt=""></a>
+                <h3>Satin pure Rajvadi</h3>
+            </div>
+            <div class="gallery-item">
+                <a href="https://www.rangwalarajwadi.com/product/poshak-03-a/"><img src="https://www.rangwalarajwadi.com/wp-content/uploads/2020/10/Poshak-3-6.jpg" alt=""></a>
+                <h3>Samuh Rajputi</h3>
+            </div>
+            <div class="gallery-item">
+                <a href="https://www.rangwalarajwadi.com/product-category/poshak/"><img src="https://www.rangwalarajwadi.com/wp-content/uploads/2020/10/RWPY02-300x420.jpg" alt=""></a>
+                <h3>yellow for love</h3>
+            </div>
+            <div class="gallery-item">
+                <a href="https://www.thevoiceoffashion.com/fabric-of-india/features/rajputi-poshak-present-continuous-5123"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTDTkLgY1atXLDOOWFxDL6qpI4X-hPJe36bg&s" alt=""></a>
+                <h3>Present for Love</h3>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="forum">
+        <h2>Community Forum</h2>
+        <p>Join the conversation! Ask questions, share ideas, and learn from other textile enthusiasts.</p>
+        <button><a href="https://www.instagram.com/direct/t/17843910140338157/?hl=en">Visit Forum</a></button>
+    </section>
+
+
+    <footer class="footer">
+        <p>&copy; 2024 Textile Community. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
